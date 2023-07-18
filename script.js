@@ -12,3 +12,20 @@ timeline.from("nav a",{
     y:-200,
     stagger:0.3,
 })
+
+gsap.from(".homeImage",{
+    scale:2.5,
+    borderRadius:"50%",
+    opacity:0,
+    duration:1,
+    
+
+})
+
+gsap.to(".homeImage",{
+
+    duration:2,
+    repeat:-1,
+    rotate:360
+
+})

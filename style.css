@@ -10,16 +10,24 @@ html,body{
 
 }
 #main{
+    overflow-x: hidden;
     min-height: 100%;
     width: 100%;
 }
 
 #page1{
+    overflow-x: hidden;
+    overflow-y: hidden;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #1F1f1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 nav{
+    width: 100%;
     padding:0 40px;
     height: 10%;
     background-color: green;
@@ -38,4 +46,17 @@ nav{
     color: black;
     text-decoration: none;
     
+}
+
+
+.homeImage{
+    margin: auto;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    border: 1px solid white;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
