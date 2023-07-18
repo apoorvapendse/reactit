@@ -19,7 +19,8 @@ gsap.from(".homeImage",{
     opacity:0,
     duration:1,
     
-
+    x:-1200,
+    
 })
 
 gsap.to(".homeImage",{
