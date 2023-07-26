@@ -33,7 +33,8 @@
   }
   
   .nav {
-    height: 70px;
+    text-align: center;
+    height: 45px;
     width: 100%;
     background-color: #4d4d4d;
     position: relative;
@@ -55,6 +56,7 @@
   }
   
   .nav > .nav-links {
+    
     display: inline;
     float: right;
     font-size: 18px;
@@ -75,9 +77,10 @@
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:2000px) {
     .nav > .nav-btn {
       display: inline-block;
+      height: 100%;
       position: absolute;
       right: 0px;
       top: 0px;
