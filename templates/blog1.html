@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>What is React And Why Should You Bother</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    *{
+      font-family: system-ui;
+    }
+    p{
+      font-size: 20px;
+      /*text-align:justify;*/
+    }
+    li{
+      font-size: 20px;
+      font-style: italic;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #fuckoff{
+      text-align: left;
+      font-size: 16px;
+    }
+    
+  </style>
+
+  <!-- =======================================================
+  * Template Name: ZenBlog
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Author: BootstrapMade.com
+  * License: https:///bootstrapmade.com/license/
+  ======================================================== -->
+  <link href="custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>React.js</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="category.html"><span>Blogs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+                  <li><a href="./blog2.html">Blog2</a></li>
+                  <li><a href="./blog3.html">Blog3</a></li>
+                  <li><a href="./blog4.html">Blog4</a></li>
+                  <li><a href="./blog5.html">Blog5</a></li>
+                  <li><a href="./blog6.html">Blog6</a></li>
+                  
+            </ul>
+          </li>
+
+        </ul>
+      </nav><!-- .navbar -->
+
+      <div class="position-relative">
+        <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <span class="icon bi-search"></span>
+            <input type="text" placeholder="Search" class="form-control">
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <section class="single-post-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 post-content" data-aos="fade-up" style="margin: auto">
+            <!-- ======= Single Post Content ======= -->
+            <div class="single-post">
+              <div class="post-meta"><span class="date">Blog#1</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+              <h1 class="mb-5">What is React and Why Should You Bother?</h1>
+              <p id="fuckoff"><span class="firstcharacter">R</span>eact, has become a buzzword when it comes to frontend development libraries and frameworks and for good reason.
+
+                In this article, we will explore why developers should use React when it comes to implementing seamless front-end services.</p>
+
+              <figure class="my-4">
+                <img src="https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/xkBaqlcqeb4/upload/fb3d5b6599acbabbb3abb9a1a0b0423c.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt="" class="img-fluid">
+                <figcaption style="text-align:center">Developed by Facebook, React allows developers to create reusable UI components that efficiently update and render data-driven views. </figcaption>
+              </figure>
+              <p>
+                In this article, we will explore why developers should use React when it comes to implementing seamless front-end services.</p>
+
+
+                <h2>In Simple Terms, What is React?</h2>
+                <ul>
+                  <li>React is a popular JavaScript library used for building user interfaces.</li>
+                  <li>Developed by Facebook, React allows developers to create reusable UI components that efficiently update and render data-driven views.</li>
+                  <li>Its key concept, the virtual DOM, enables React to efficiently update only the necessary components when data changes, resulting in faster and more responsive applications. React follows a component-based architecture, promoting code reusability and modular development.</li>
+                  <li>It has gained widespread adoption due to its declarative syntax, which simplifies UI development, and its extensive ecosystem of libraries and tools. React is widely used in web development to build interactive and dynamic user interfaces.</li>
+                  <li>The main advantage of using React is in making single-page applications where you can render different pages without refreshing the page by making use of react-router-dom.</li>
+                </ul>
+                <h2>Prerequisites for learning React:</h2>
+                <ol>
+                  <li>
+                    <h3>
+                      HTML and CSS:
+                    </h3>
+                    <p>
+                      Familiarity with HTML (Hypertext Markup Language) is essential since React components are typically rendered as HTML elements. Understanding CSS (Cascading Style Sheets) is also beneficial for styling React components.
+                    </p>
+
+                  </li>
+
+                  <li>
+                    <h3>
+                      JavaScript:
+
+
+                    </h3>
+                    <p>
+                      React is primarily built using JavaScript, so having a good grasp of JavaScript fundamentals is crucial. Make sure you understand variables, data types, functions, loops, arrays, and object-oriented programming concepts.
+                    </p>
+
+                  </li>
+
+                  <li>
+                    <h3>
+                      ES6 (ECMAScript 2015):
+
+
+                    </h3>
+                    <p>
+                        React leverages many features introduced in ES6, such as arrow functions, template literals, spread operators, and destructuring assignments. Familiarity with ES6 syntax will enhance your understanding and productivity while working with React.
+                    </p>
+
+                  </li>
+
+                  <li>
+                    <h3>
+                      Web Development Concepts:
+
+
+                    </h3>
+                    <p>
+                      It's advantageous to have a general understanding of web development concepts like HTTP requests, RESTful APIs, client-side vs. server-side rendering, and the Document Object Model (DOM).
+                    </p>
+
+                  </li>
+                </ol>
+                <hr>
+              <figure class="my-4">
+                <img src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1lcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" class="img-fluid">
+
+                <figcaption style="text-align: center;">How will learning React take your career to new heights? </figcaption>
+              </figure>
+               <h2>Benefits of learning React:</h2>
+                <ol>
+                  <li>
+                    <h3>
+                     High job opportunities:
+
+
+                    </h3>
+                    <p>
+                      React has gained significant popularity in the web development community, and there is a high demand for React developers in the job market. Learning React can open up numerous job opportunities and increase your chances of finding fulfilling and well-paid positions.
+
+
+                    </p>
+
+                  </li>
+
+                  <li>
+                    <h3>
+                      Versatility and Market Relevance:
+
+:
+
+
+                    </h3>
+                    <p>
+                     React is widely used by companies of all sizes, from startups to large enterprises. By learning React, you gain a versatile skill set that can be applied to a wide range of projects and industries. React's market relevance ensures that your knowledge remains valuable and in demand.
+                    </p>
+
+                  </li>
+
+                  <li>
+                    <h3>
+Efficient and productive development:
+
+
+
+                    </h3>
+                    <p>
+                       React's component-based architecture, virtual DOM, and declarative syntax promote efficient and productive development practices. You can build reusable and modular components, work on different parts of an application concurrently, and leverage React's performance optimizations. This can result in faster development cycles, improved code quality, and better overall productivity.
+                    </p>
+
+                  </li>
+
+                  <li>
+                    <h3>
+                    Large and active community:
+
+
+
+
+                    </h3>
+                    <p>
+                     React has a thriving community of developers, which means there are abundant learning resources, tutorials, libraries, and tools available. Being part of this community can provide you with support, guidance, and opportunities for collaboration and knowledge-sharing.
+
+
+                    </p>
+
+                  </li>
+                </ol>
+                <hr>
+                <h2>
+                  Conclusion:
+                </h2>
+                <p>So, why should you bother with React? The answer lies in its ability to transform your development workflow, enhance your skill set, and open doors to exciting opportunities. Whether you're building a simple website, a complex web application, or exploring new horizons like mobile development, React has the tools and community support to accompany you on your coding journey.</p>
+                <p>We encourage you to dive in, explore, and experiment with React. Embrace the challenge, expand your knowledge, and embark on a path that leads to innovation and endless possibilities. With React, the future of web development is within your reach.
+
+</p>
+                <p>Thank you for joining us, and we wish you all the best in your React endeavours.<B> Happy coding!</b></p>
+
+            </div><!-- End Single Post Content -->
+
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              © Copyright <strong><a href="https://itc6.netlify.app" target="_blank">itc6.netlify.app</a></strong>. All Rights Reserved
+            </div>
+
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+              Designed by <a href="https://bootstrapmade.com/">SY-IT-C6</a>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
