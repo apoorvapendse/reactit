@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css" />
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -78,6 +79,8 @@
                   <li><a href="./blog4.html">Blog4</a></li>
                   <li><a href="./blog5.html">Blog5</a></li>
                   <li><a href="./blog6.html">Blog6</a></li>
+                  
+      </ul>
             </ul>
           </li>
 
@@ -115,92 +118,124 @@
           <div class="col-md-9 post-content" data-aos="fade-up" style="margin: auto">
             <!-- ======= Single Post Content ======= -->
             <div class="single-post">
-              <div class="post-meta"><span class="date">Blog#1</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h1 class="mb-5">What is React and Why Should You Bother?</h1>
-              <p id="fuckoff"><span class="firstcharacter">R</span>eact, has become a buzzword when it comes to frontend development libraries and frameworks and for good reason.
-
-                In this article, we will explore why developers should use React when it comes to implementing seamless front-end services.</p>
+              <div class="post-meta"><span class="date">Blog#2</span> <span class="mx-1">&bullet;</span> <span>Aug 5th '23</span></div>
+              <h1 class="mb-5">Getting Started with React Hooks: Simple Examples for Beginners</h1>
+              <p id="fuckoff"><span class="firstcharacter">R</span>eact has gained widespread acclaim as an essential tool in the arsenal of frontend development libraries and frameworks. In this article, we delve into the significance of adopting React, shedding light on why it should be your preferred choice for crafting impeccable front-end experiences..</p>
 
               <figure class="my-4">
-                <img src="https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/xkBaqlcqeb4/upload/fb3d5b6599acbabbb3abb9a1a0b0423c.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt="" class="img-fluid">
-                <figcaption style="text-align:center">Developed by Facebook, React allows developers to create reusable UI components that efficiently update and render data-driven views. </figcaption>
+                <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg&ga=GA1.2.856897899.1691695530&semt=sphsize=626&ext=jpg&ga=GA1.2.856897899.1691695530&semt=sph=900&t=st=1691695668~exp=1691696268~hmac=d9ee44a6d293ad692aea0e7c3d236f3ef5375d011a0a34bd57a752a45e2fde48=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt="" class="img-fluid">
+                <figcaption style="text-align:center">Born from Facebook's innovation, React Hooks empowers developers to craft reusable UI components, optimizing the rendering of dynamic data-driven views. </figcaption>
               </figure>
               <p>
-                In this article, we will explore why developers should use React when it comes to implementing seamless front-end services.</p>
+                In this article, we'll explore the world of React Hooks and understand why they have become a vital part of modern front-end development. If you're new to React and eager to enhance your skills, let's dive in!</p>
 
 
-                <h2>In Simple Terms, What is React?</h2>
+                <h2>What are React Hooks?</h2>
                 <ul>
-                  <li>React is a popular JavaScript library used for building user interfaces.</li>
-                  <li>Developed by Facebook, React allows developers to create reusable UI components that efficiently update and render data-driven views.</li>
-                  <li>Its key concept, the virtual DOM, enables React to efficiently update only the necessary components when data changes, resulting in faster and more responsive applications. React follows a component-based architecture, promoting code reusability and modular development.</li>
-                  <li>It has gained widespread adoption due to its declarative syntax, which simplifies UI development, and its extensive ecosystem of libraries and tools. React is widely used in web development to build interactive and dynamic user interfaces.</li>
-                  <li>The main advantage of using React is in making single-page applications where you can render different pages without refreshing the page by making use of react-router-dom.</li>
+                  <li>React Hooks are powerful functions that eliminate the need for class components and simplify state management in functional components. Introduced in React 16.8, Hooks provide a cleaner and more concise way to handle state and side effects.</li>
+                 
                 </ul>
-                <h2>Prerequisites for learning React:</h2>
-                <ol>
-                  <li>
-                    <h3>
-                      HTML and CSS:
-                    </h3>
-                    <p>
-                      Familiarity with HTML (Hypertext Markup Language) is essential since React components are typically rendered as HTML elements. Understanding CSS (Cascading Style Sheets) is also beneficial for styling React components.
-                    </p>
+                <h2>The useState Hook:</h2>
+                <ul>
+                    <li>One of the most widely used Hooks is useState. It allows you to add state to functional components effortlessly. Here's a basic example:
 
-                  </li>
-
-                  <li>
-                    <h3>
-                      JavaScript:
-
-
-                    </h3>
-                    <p>
-                      React is primarily built using JavaScript, so having a good grasp of JavaScript fundamentals is crucial. Make sure you understand variables, data types, functions, loops, arrays, and object-oriented programming concepts.
-                    </p>
-
-                  </li>
-
-                  <li>
-                    <h3>
-                      ES6 (ECMAScript 2015):
-
-
-                    </h3>
-                    <p>
-                        React leverages many features introduced in ES6, such as arrow functions, template literals, spread operators, and destructuring assignments. Familiarity with ES6 syntax will enhance your understanding and productivity while working with React.
-                    </p>
-
-                  </li>
-
-                  <li>
-                    <h3>
-                      Web Development Concepts:
-
-
-                    </h3>
-                    <p>
-                      It's advantageous to have a general understanding of web development concepts like HTTP requests, RESTful APIs, client-side vs. server-side rendering, and the Document Object Model (DOM).
-                    </p>
-
-                  </li>
+                        
+                        </li>
+                </ul>
+                <pre ><code class="language-javascript" >    
+                    function useState(initialValue) {
+                      let state = initialValue;
+                    function setState(newState) {
+                        state = newState;
+                         }
+                    return [state, setState];
+                        }
+                    const Counter = () => {
+                    const [count, setCount] = useState(0);
+                    const increment = () => {
+                       setCount(count + 1);
+                      };
+                    return {
+                        count,
+                        increment
+                      };
+                    };
+                    const counterComponent = Counter();
+                    console.log(counterComponent.count); 
+                    counterComponent.increment();
+                    console.log(counterComponent.count); <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+                
+                    
+                    </code></pre>
+                    <ul>
+                        <li><q><strong>useState</strong></q>is a function that returns a current state value and a function to update it.The <q>Counter</q>function uses <strong>useState</strong> to create a count state variable, 
+                            initially set to 0.When the<q><strong>increment</strong></q>  function is called, it updates the count using the provided setter function.The<q>Counter</q>function returns the current count value and 
+                            the <q>increment</q>function.When using the<q>Counter</q>function, you can access the count value and call <q>increment</q>to update it.
+    
+                        </li>
+                    </ul>
+                
+                   
                 </ol>
                 <hr>
               <figure class="my-4">
-                <img src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1lcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" class="img-fluid">
+                            <img src="https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="" class="img-fluid">
 
-                <figcaption style="text-align: center;">How will learning React take your career to new heights? </figcaption>
+                
               </figure>
-               <h2>Benefits of learning React:</h2>
+              <h2>The useEffect Hook:</h2>
+                <ul>
+                    <li>Another essential Hook is useEffect, which handles side effects in functional components. For instance, you can fetch data from an API or update the document title. Here's an example:
+
+                        
+                        </li>
+                </ul>
+                <pre ><code class="language-javascript" >    
+import React, { useState, useEffect } from 'react';
+const DataFetching = () => {
+const [data, setData] = useState([]);
+useEffect(() => {
+fetch('https://api.example.com/data')
+.then((response) => response.json())
+.then((data) => setData(data))
+.catch((error) => console.error(error));
+  }, []);
+ return (
+    <div>
+    <h2>Data:</h2>
+    <ul>
+    {data.map((item) => (
+     <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default DataFetching;
+ <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+                
+                    
+                    </code></pre>
+                    <ul>
+                        <li><q><strong>useEffect</strong></q> is a hook for managing side effects in React. <q><strong>useState</strong></q> creates a state variable like<q>Count</q>(initialized as 0 in Counter). Calling increment updates the state. The Counter returns count and increment.
+                             Use Counter to access count and update via increment.
+                        </li>
+                    </ul>
+                
+                   
+                </ol>
+               <h2> Why Learn React Hooks:</h2>
                 <ol>
                   <li>
                     <h3>
-                     High job opportunities:
-
-
+                        Simplified State Management:
                     </h3>
                     <p>
-                      React has gained significant popularity in the web development community, and there is a high demand for React developers in the job market. Learning React can open up numerous job opportunities and increase your chances of finding fulfilling and well-paid positions.
+                        Hooks make state management in functional components concise and easy to follow.
 
 
                     </p>
@@ -209,41 +244,37 @@
 
                   <li>
                     <h3>
-                      Versatility and Market Relevance:
-
-:
-
-
-                    </h3>
+                        Code Reusability:
+                      </h3>
                     <p>
-                     React is widely used by companies of all sizes, from startups to large enterprises. By learning React, you gain a versatile skill set that can be applied to a wide range of projects and industries. React's market relevance ensures that your knowledge remains valuable and in demand.
+                        They encourage code reusability through custom Hooks that share stateful logic.
                     </p>
 
                   </li>
 
                   <li>
                     <h3>
-Efficient and productive development:
+                        Improved Performance:
 
 
 
                     </h3>
                     <p>
-                       React's component-based architecture, virtual DOM, and declarative syntax promote efficient and productive development practices. You can build reusable and modular components, work on different parts of an application concurrently, and leverage React's performance optimizations. This can result in faster development cycles, improved code quality, and better overall productivity.
+                        React's optimizations, combined with Hooks' efficient updates, lead to better app performance.
                     </p>
 
                   </li>
 
                   <li>
                     <h3>
-                    Large and active community:
+                        Strong Community Support:
 
 
 
 
                     </h3>
                     <p>
-                     React has a thriving community of developers, which means there are abundant learning resources, tutorials, libraries, and tools available. Being part of this community can provide you with support, guidance, and opportunities for collaboration and knowledge-sharing.
+                        The vast React community offers abundant resources and tutorials to aid your learning journey.
 
 
                     </p>
@@ -254,11 +285,11 @@ Efficient and productive development:
                 <h2>
                   Conclusion:
                 </h2>
-                <p>So, why should you bother with React? The answer lies in its ability to transform your development workflow, enhance your skill set, and open doors to exciting opportunities. Whether you're building a simple website, a complex web application, or exploring new horizons like mobile development, React has the tools and community support to accompany you on your coding journey.</p>
-                <p>We encourage you to dive in, explore, and experiment with React. Embrace the challenge, expand your knowledge, and embark on a path that leads to innovation and endless possibilities. With React, the future of web development is within your reach.
+                <p>React Hooks have revolutionized front-end development, simplifying state management and improving code organization. As a beginner, embracing Hooks will empower you to build robust and interactive user interfaces.</p>
+                
 
-</p>
-                <p>Thank you for joining us, and we wish you all the best in your React endeavours.<B> Happy coding!</b></p>
+
+                <p>Enjoy the journey of discovering React Hooks and how they enhance your development experience.<B> Happy coding and may your React projects flourish!</b></p>
 
             </div><!-- End Single Post Content -->
 
