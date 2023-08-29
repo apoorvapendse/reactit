@@ -1298,3 +1298,9 @@ section {
 .footer .credits a {
   color: var(--color-white);
 }
+
+.image-container {
+  display: grid;
+  place-items: center;
+  height: 100vh; /* Adjust this to your needs */
+}
