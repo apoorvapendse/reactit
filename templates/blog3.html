@@ -116,150 +116,253 @@
           <div class="col-md-9 post-content" data-aos="fade-up" style="margin: auto">
             <!-- ======= Single Post Content ======= -->
             <div class="single-post">
-              <div class="post-meta"><span class="date">Blog#1</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h1 class="mb-5">What is React and Why Should You Bother?</h1>
-              <p id="fuckoff"><span class="firstcharacter">R</span>eact, has become a buzzword when it comes to frontend development libraries and frameworks and for good reason.
+              <div class="post-meta"><span class="date">Blog#3</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
+              <h1 class="mb-5">Handling Forms in React: A Beginner's Tutorial</h1>
+              <p id="fuckoff"><span class="firstcharacter">F</span>orms are an essential component of web development as they enable us to gather user input and facilitate interaction with our applications.
 
-                In this article, we will explore why developers should use React when it comes to implementing seamless front-end services.</p>
+                The good news is that React offers robust capabilities for managing form inputs and their associated state. In this tutorial, we will delve into the basics of form handling in React, equipping ourselves with the knowledge to build engaging and intuitive forms.</p>
 
-              <figure class="my-4">
-                <img src="https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/xkBaqlcqeb4/upload/fb3d5b6599acbabbb3abb9a1a0b0423c.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp" alt="" class="img-fluid">
-                <figcaption style="text-align:center">Developed by Facebook, React allows developers to create reusable UI components that efficiently update and render data-driven views. </figcaption>
-              </figure>
+                <figure class="my-4">
+                  <div class="image-container">
+                    <img src="data:image/png;base64,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" alt="Centered Image" style="width: 100%; max-width: 600px;">
+                  </div>                
+                  <figcaption style="text-align:center">React Forms makes our lives much simpler.</figcaption>
+                </figure>
+                
               <p>
-                In this article, we will explore why developers should use React when it comes to implementing seamless front-end services.</p>
-
-
-                <h2>In Simple Terms, What is React?</h2>
+                In this article, we will explore how to handle forms in <strong>React</strong> in an efficient way.</p>
+                <ol>
+                <li><h2>Setting up a React Form</h2></li>
                 <ul>
-                  <li>React is a popular JavaScript library used for building user interfaces.</li>
-                  <li>Developed by Facebook, React allows developers to create reusable UI components that efficiently update and render data-driven views.</li>
-                  <li>Its key concept, the virtual DOM, enables React to efficiently update only the necessary components when data changes, resulting in faster and more responsive applications. React follows a component-based architecture, promoting code reusability and modular development.</li>
-                  <li>It has gained widespread adoption due to its declarative syntax, which simplifies UI development, and its extensive ecosystem of libraries and tools. React is widely used in web development to build interactive and dynamic user interfaces.</li>
-                  <li>The main advantage of using React is in making single-page applications where you can render different pages without refreshing the page by making use of react-router-dom.</li>
+                  <li>
+                   <p>
+                  To get started, let's set up a basic form component in <strong>React</strong>. We'll leverage React's useState hook to manage the form state. Here's an example of a simple form with input fields for the user's name and email:
+                   </p>
+                 </li>  
                 </ul>
-                <h2>Prerequisites for learning React:</h2>
-                <ol>
-                  <li>
-                    <h3>
-                      HTML and CSS:
-                    </h3>
-                    <p>
-                      Familiarity with HTML (Hypertext Markup Language) is essential since React components are typically rendered as HTML elements. Understanding CSS (Cascading Style Sheets) is also beneficial for styling React components.
-                    </p>
+                <br>
+                <pre ><code class="language-javascript" >    
+                  import React, { useState } from 'react';
 
-                  </li>
-
-                  <li>
-                    <h3>
-                      JavaScript:
-
-
-                    </h3>
-                    <p>
-                      React is primarily built using JavaScript, so having a good grasp of JavaScript fundamentals is crucial. Make sure you understand variables, data types, functions, loops, arrays, and object-oriented programming concepts.
-                    </p>
-
-                  </li>
-
-                  <li>
-                    <h3>
-                      ES6 (ECMAScript 2015):
-
-
-                    </h3>
-                    <p>
-                        React leverages many features introduced in ES6, such as arrow functions, template literals, spread operators, and destructuring assignments. Familiarity with ES6 syntax will enhance your understanding and productivity while working with React.
-                    </p>
-
-                  </li>
-
-                  <li>
-                    <h3>
-                      Web Development Concepts:
-
-
-                    </h3>
-                    <p>
-                      It's advantageous to have a general understanding of web development concepts like HTTP requests, RESTful APIs, client-side vs. server-side rendering, and the Document Object Model (DOM).
-                    </p>
-
-                  </li>
-                </ol>
+                  const MyForm = () => {
+                    const [name, setName] = useState('');
+                    const [email, setEmail] = useState('');
+                  
+                    const handleSubmit = (e) => {
+                      e.preventDefault();
+                      // Process the form data here
+                    };
+                  
+                    return (
+                      <form onSubmit={handleSubmit}>
+                        <label>
+                          Name:
+                          <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                          />
+                        </label>
+                        <label>
+                          Email:
+                          <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                          />
+                        </label>
+                        <button type="submit">Submit</button>
+                      </form>
+                    );
+                  };
+                  
+                  export default MyForm; <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+                  </code></pre>
+                <br>
+                <ul><li><p>
+                  In this example, we use the <q><strong>useState</strong></q> hook to create state variables for the name and email values. The <q><strong>handleSubmit</strong></q> function is triggered when the form is submitted, preventing the default form submission behaviour. We'll handle form submission later in the tutorial.
+                </p></li></ul>
                 <hr>
-              <figure class="my-4">
-                <img src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1lcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="" class="img-fluid">
+                <li><h2>Handling Form Input</h2></li>
+                <ul><li><p>
+                  In <strong>React</strong>, we can capture and update the form state by using the <q><strong>onChange</strong></q> event handler. This allows us to create controlled components that synchronize the form input values with the state. Let's update our form component to handle user input:
+                </p></li></ul>
+                
+                <pre ><code class="language-javascript" >    
+                  import React, { useState } from 'react';
 
-                <figcaption style="text-align: center;">How will learning React take your career to new heights? </figcaption>
-              </figure>
-               <h2>Benefits of learning React:</h2>
-                <ol>
-                  <li>
-                    <h3>
-                     High job opportunities:
-
-
-                    </h3>
-                    <p>
-                      React has gained significant popularity in the web development community, and there is a high demand for React developers in the job market. Learning React can open up numerous job opportunities and increase your chances of finding fulfilling and well-paid positions.
-
-
-                    </p>
-
-                  </li>
-
-                  <li>
-                    <h3>
-                      Versatility and Market Relevance:
-
-:
-
-
-                    </h3>
-                    <p>
-                     React is widely used by companies of all sizes, from startups to large enterprises. By learning React, you gain a versatile skill set that can be applied to a wide range of projects and industries. React's market relevance ensures that your knowledge remains valuable and in demand.
-                    </p>
-
-                  </li>
-
-                  <li>
-                    <h3>
-Efficient and productive development:
-
-
-
-                    </h3>
-                    <p>
-                       React's component-based architecture, virtual DOM, and declarative syntax promote efficient and productive development practices. You can build reusable and modular components, work on different parts of an application concurrently, and leverage React's performance optimizations. This can result in faster development cycles, improved code quality, and better overall productivity.
-                    </p>
-
-                  </li>
-
-                  <li>
-                    <h3>
-                    Large and active community:
-
-
-
-
-                    </h3>
-                    <p>
-                     React has a thriving community of developers, which means there are abundant learning resources, tutorials, libraries, and tools available. Being part of this community can provide you with support, guidance, and opportunities for collaboration and knowledge-sharing.
-
-
-                    </p>
-
-                  </li>
-                </ol>
+                  const MyForm = () => {
+                    const [name, setName] = useState('');
+                    const [email, setEmail] = useState('');
+                  
+                    // ...
+                  
+                    return (
+                      <form onSubmit={handleSubmit}>
+                        <label>
+                          Name:
+                          <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                          />
+                        </label>
+                        <label>
+                          Email:
+                          <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                          />
+                        </label>
+                        <button type="submit">Submit</button>
+                      </form>
+                    );
+                  };
+                  
+                  export default MyForm; <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+  
+                  </code></pre>
+                <ul><li><p>
+                  In this updated code, we bind the value attribute of each input field to its respective state variable (name and email). The <q><strong>onChange</strong></q> event handler updates the state whenever the user types in the input field, ensuring that the component reflects the latest input value.
+                </p></li></ul>
+                
                 <hr>
-                <h2>
-                  Conclusion:
-                </h2>
-                <p>So, why should you bother with React? The answer lies in its ability to transform your development workflow, enhance your skill set, and open doors to exciting opportunities. Whether you're building a simple website, a complex web application, or exploring new horizons like mobile development, React has the tools and community support to accompany you on your coding journey.</p>
-                <p>We encourage you to dive in, explore, and experiment with React. Embrace the challenge, expand your knowledge, and embark on a path that leads to innovation and endless possibilities. With React, the future of web development is within your reach.
 
-</p>
-                <p>Thank you for joining us, and we wish you all the best in your React endeavours.<B> Happy coding!</b></p>
+                <li><h2> Validating Form Input </h2></li>
+                <ul><li><p> Form validation is an essential part of managing forms as it ensures that user-submitted data is valid and meets specific requirements. To incorporate basic form validation into our React form, we can utilize conditional rendering and error messages. By implementing these techniques, we can enhance our form component to include validation. </p></li></ul>
+                
+                <pre ><code class="language-javascript" >    
+                  import React, { useState } from 'react';
+
+                  const MyForm = () => {
+                    const [name, setName] = useState('');
+                    const [email, setEmail] = useState('');
+                    const [error, setError] = useState('');
+                  
+                    const handleSubmit = (e) => {
+                      e.preventDefault();
+                      if (!name || !email) {
+                        setError('Please fill in all fields');
+                        return;
+                      }
+                      // Process the form data here
+                    };
+                  
+                    return (
+                      <form onSubmit={handleSubmit}>
+                        <label>
+                          Name:
+                          <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                          />
+                        </label>
+                        <label>
+                          Email:
+                          <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                          />
+                        </label>
+                        {error && <p>{error}</p>}
+                        <button type="submit">Submit</button>
+                      </form>
+                    );
+                  };
+                  
+                  export default MyForm; <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+  
+                  </code></pre>
+                  <ul><li><p> In this updated code, we've added an error state variable to track any validation errors. The handleSubmit function checks if the name and email fields are empty. If they are, it sets the error message and prevents form submission. The error message is conditionally rendered below the form inputs. </p></li></ul>
+                
+                <hr>
+
+                <li><h2>Submitting and Handling Form Data</h2></li>
+                <ul><li><p>Now that we have a form with input handling and basic validation, it's time to handle form submission and process the data. In our handleSubmit function, we can perform any necessary actions, such as sending the data to a server or updating the application state. For the sake of simplicity, let's log the form data to the console:</p></li></ul>
+                <pre ><code class="language-javascript" >   
+                import React, { useState } from 'react';
+
+                const MyForm = () => {
+                  const [name, setName] = useState('');
+                  const [email, setEmail] = useState('');
+                  const [error, setError] = useState('');
+                
+                  const handleSubmit = (e) => {
+                    e.preventDefault();
+                    if (!name || !email) {
+                      setError('Please fill in all fields');
+                      return;
+                    }
+                    console.log('Form Data:', { name, email });
+                    // Additional form submission logic goes here
+                  };
+                
+                  return (
+                    // ...
+                  );
+                };
+                
+                export default MyForm; <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+  
+                  </code></pre>
+                  <ul><li><p>In this example, we've added a console.log statement within the handleSubmit function to display the form data in the browser console. You can replace this statement with your custom logic, such as making an API call or updating the state of your application.</p></li></ul>
+                
+                <hr>
+
+                <li><h2>Additional Form Features</h2></li>
+                <ul><li><p>So far, we've covered the basics of handling forms in React. However, there are many other form features and input types you can explore, such as checkboxes, radio buttons, select dropdowns, and file uploads. Each of these features follows a similar pattern of capturing user input and updating the form state. Here's a brief example of how you can implement a checkbox in your form:</p></li></ul>
+                
+                <pre ><code class="language-javascript" >    
+                  import React, { useState } from 'react';
+
+                  const MyForm = () => {
+                    const [newsletter, setNewsletter] = useState(false);
+                  
+                    // ...
+                  
+                    return (
+                      <form onSubmit={handleSubmit}>
+                        {/* ... */}
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked={newsletter}
+                            onChange={(e) => setNewsletter(e.target.checked)}
+                          />
+                          Subscribe to newsletter
+                        </label>
+                        {/* ... */}
+                      </form>
+                    );
+                  };
+                  
+                  export default MyForm; <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+  
+                  </code></pre>
+                <ul><li><p>In this example, we introduce a newsletter state variable to track whether the user wants to subscribe to a newsletter. The checkbox's checked attribute is bound to the newsletter state, and the onChange event updates the state accordingly.</p></li></ul>
+                
+
+                <hr>
+               </ol>
+
+                <h2> Conclusion </h2>
+                <p> Handling forms in a <strong>React</strong> is a crucial aspect when it comes to developing engaging web applications. It allows us to effectively manage user input, validate data, and ensure a smooth user experience. In this beginner's tutorial, we delved into the fundamental concepts of form handling in <strong>React</strong>, equipping you with a solid foundation to build upon. With practice and further exploration, you'll gain the expertise to incorporate advanced features and techniques into your forms. By implementing forms in your <strong>React</strong> applications, you can empower your users to effortlessly interact with your application while maintaining data integrity. </p>
+
+                <p> So, why wait? Start exploring the world of form handling in <strong>React</strong> today and unlock endless possibilities for creating dynamic and interactive web experiences. </p>
+
+<hr>
+              
+
+
+                <p>Thank you for joining us, and we wish you all the best in your <strong>React</strong> endeavours.<B> Happy coding!</b></p>
 
             </div><!-- End Single Post Content -->
 
