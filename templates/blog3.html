@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism.min.css" />
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -176,8 +177,10 @@
                     );
                   };
                   
-                  export default MyForm; <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                  export default MyForm; 
+                  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
                   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
+                  
                   </code></pre>
                 <br>
                 <ul><li><p>
@@ -193,10 +196,16 @@
                   import React, { useState } from 'react';
 
                   const MyForm = () => {
+                    // State variables for name and email
                     const [name, setName] = useState('');
                     const [email, setEmail] = useState('');
                   
-                    // ...
+                    // Function to handle form submission
+                    const handleSubmit = (e) => {
+                      e.preventDefault();
+                      // Process the form data here, for example, send it to an API or perform some action
+                      console.log('Submitted:', name, email);
+                    };
                   
                     return (
                       <form onSubmit={handleSubmit}>
@@ -221,7 +230,9 @@
                     );
                   };
                   
-                  export default MyForm; <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+                  export default MyForm;
+                  
+                  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
                   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-javascript.min.js"></script>
   
                   </code></pre>
